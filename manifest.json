@@ -1,0 +1,26 @@
+{
+  "manifest_version": 2,
+  "name": "Custom Cursor Changer",
+  "version": "1.0",
+  "description": "Toggle your mouse cursor to a custom emoji or image",
+  "permissions": ["storage", "activeTab"],
+  "browser_action": {
+    "default_popup": "popup.html",
+    "default_title": "Custom Cursor"
+  },
+  "icons": {
+    "48": "public/precious.png"
+  },
+  "options_page": "options.html",
+  "options_ui": {
+    "page": "options.html",
+    "open_in_tab": true
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"],
+      "run_at": "document_idle"
+    }
+  ]
+}

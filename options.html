@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Upload Cursor Image</title>
+  </head>
+
+  <body>
+    <div class="cMy-body">
+      <div>
+        <p class="cUpload-font">Upload image</p>
+        <p class="cImg-inst">
+          *Only PNG images accepted. Width and height must not be more than 70px
+        </p>
+      </div>
+      <div class="cImage-layout">
+        <input
+          type="file"
+          id="cursorFile"
+          accept="image/png"
+          style="display: none"
+        />
+        <div class="cUpload-img">
+          <label for="cursorFile">
+            <img src="./public/upload.png" style="cursor: pointer;"/>
+          </label>
+          <p id="fileName" class="cFile-name"></p>
+        </div>
+      </div>
+
+      <label class="cEnable">
+        Enable Custom Cursor:
+        <input type="checkbox" id="toggleCursor" />
+      </label>
+      <button id="uploadBtn" class="cBtn">Upload & Save</button>
+
+      <p class="cLink">
+        created by
+        <a href="https://www.preciousaffiah.com" target="_blank" class="cText"
+          >Precious Affiah
+        </a>
+      </p>
+    </div>
+
+    <script src="options.js"></script>
+  </body>
+</html>

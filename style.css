@@ -1,0 +1,95 @@
+/* .custom-cursor, * {
+    cursor: url("cursor-precious.png") 16 16, auto !important;
+  } */
+
+/* body {
+    background-color: #ffb30024;
+    font-family: Inconsolata, monospace;
+    cursor:url('cursor.png'), pointer;
+    
+  } */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.cPopup-body{
+padding: 0 1.5rem;
+}
+
+.cMy-body {
+  background-color: black;
+  height: 100%;
+  min-height: 100vh;
+  width: 100%;
+  color: white;
+  font-family: "Courier New", Courier, monospace;
+  margin: 0 auto;
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  /* justify-content: center; */
+  align-items: center;
+}
+
+.cUpload-font {
+  color: rgb(211, 211, 211);
+  font-weight: 600;
+  padding-top: 5rem;
+  padding-bottom: 1rem;
+  font-size: 1.3rem;
+}
+
+.cUpload-img {
+  margin: auto;
+  cursor: pointer;
+}
+
+.cImg-inst {
+  font-size: 0.75rem;
+}
+
+.cFile-name {
+  font-size: 0.85rem;
+}
+
+.cImage-layout {
+  display: flex;
+  flex-direction: column;
+  max-width: 40rem;
+  max-height: 20rem;
+  min-height: 20rem;
+  height: 100%;
+  width: 100%;
+  border: 2px dashed rgb(199, 194, 194);
+  border-radius: 2px;
+  margin: 1rem 0;
+}
+
+.cEnable {
+  font-size: 0.9rem;
+}
+.cBtn {
+  margin: 0.7rem 0;
+  background-color: rgb(112, 112, 243);
+  border: none;
+  border-radius: 3px;
+  padding: 0.3rem 1rem;
+  color: whitesmoke;
+  font-weight: bold;
+  cursor: pointer;
+  width: fit-content;
+}
+
+.cLink {
+  padding-top: 3rem;
+  text-decoration: none;
+}
+
+.cText {
+  text-decoration: none;
+  color: rgb(245, 135, 255);
+  font-weight: 900;
+}
